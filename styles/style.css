@@ -10,6 +10,6 @@
   src: url('fonts/ptsans-700.woff2');
 }
 
-h1, h2, h3, p {
+* {
   font-family: 'PT sans', sans-serif;
 }
