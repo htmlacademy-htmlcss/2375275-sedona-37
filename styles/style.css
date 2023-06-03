@@ -23,20 +23,131 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  color: #242424;
 
   background: #F2F2F2;
 }
-
-/* body {
-  margin: 0;
-
-  background: #F2F2F2;
-} */
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
 
   background: #FFFFFF;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.site-header {
+  color: #000000;
+
+  background-color: #FFFFFF;
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+
+  background-color: #FFFFFF;
+}
+
+.hero {
+  text-align: center;
+  color: #000000;
+
+  background-image: url("../pictures/index-background.jpg");
+  background-position: top;
+  background-color: #FFFFFF;
+  background-size: 1200px auto;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  margin-top: 51px;
+  margin-bottom: 20px;
+}
+
+.title-text {
+  margin-top: 64px;
+  margin-bottom: 25px;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.other-text {
+
+  margin-bottom: 90px;
+
+  text-align: center;
+  color: #333333;
+}
+
+.advantages-box {
+  width: 230px; /* как включить ширину padding-а в width? box-sizing? */
+  height: 385px;
+  padding: 0 85px;
+
+  text-align: center;
+
+  border: 1px solid black;
+}
+
+.advantages-img {
+  width: 800px;
+  height: 385px;
+
+  border: 1px solid black;
+}
+
+.advantages-h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-p {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.light-text {
+  color: #FFFFFF;
+}
+
+.bg-box-12 {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.bg-box-20 {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.bg-box-00 {
+  background: rgba(131, 179, 211);
+}
+
+.phone {
+  font-size: 40px;
+  line-height: 40px;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
 }
