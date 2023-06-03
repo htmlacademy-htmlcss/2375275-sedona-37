@@ -88,8 +88,15 @@ body {
   text-align: center;
 }
 
-.other-text {
+.h1_catalog {
+  margin: 0;
 
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.other-text {
   margin-bottom: 90px;
 
   text-align: center;
@@ -141,6 +148,41 @@ body {
 
 .bg-box-00 {
   background: rgba(131, 179, 211);
+}
+
+.subscribe {
+  width: 1200px;
+  height: 414.86px;
+
+  text-align: center;
+
+  background-color: #FFFFFF;
+  border: 1px solid black;
+}
+
+.subscribe-index {
+  background-image: url("../pictures/index-canyon-blur.jpg");
+  background-position: top;
+  background-size: 1200px auto;
+  background-repeat: no-repeat;
+}
+
+.search {
+  width: 1200px;
+  height: 406px;
+
+  text-align: center;
+
+  border: 1px solid black;
+}
+
+.filter {
+  padding: 35px 70px 70px;
+
+  background-image: url("../pictures/catalog-background.jpg");
+  background-position: top;
+  background-color: #000000;
+  /* background-repeat: no-repeat; */
 }
 
 .phone {
