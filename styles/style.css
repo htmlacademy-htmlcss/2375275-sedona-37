@@ -23,7 +23,7 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  color: #242424;
+  color: #000000;
 
   background: #F2F2F2;
 }
@@ -41,15 +41,53 @@ body {
   transform: scale(0);
 }
 
+/* BUTTONS */
+
+/* .button {
+}
+
+.button-nav {
+}
+
+.button-search {
+}
+
+.btn-submit {
+}
+
+.btn-reset {
+}
+
+.housing-card-btn-more {
+}
+
+.housing-card-btn-fav {
+} */
+
+/* HEADER */
+
 .site-header {
   color: #000000;
 
   background-color: #FFFFFF;
 }
 
+/* .navigation {
+}
+
+.navigation-list {
+}
+
+.navigation-user {
+}
+
+.navigation-item {
+}
+
+.navigation-logo {
+} */
+
 .navigation-link {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -60,6 +98,22 @@ body {
 
   background-color: #FFFFFF;
 }
+
+/* .navigation-link-current {
+}
+
+.page-header-logo {
+} */
+
+/* MAIN */
+
+/* .main-index {
+}
+
+.main-inner {
+} */
+
+/* HERO */
 
 .hero {
   text-align: center;
@@ -77,6 +131,9 @@ body {
   margin-bottom: 20px;
 }
 
+/* .divider {
+} */
+
 .title-text {
   margin-top: 64px;
   margin-bottom: 25px;
@@ -88,20 +145,17 @@ body {
   text-align: center;
 }
 
-.h1_catalog {
-  margin: 0;
-
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 78px;
-}
-
 .other-text {
   margin-bottom: 90px;
 
   text-align: center;
   color: #333333;
 }
+
+/* ADVANTAGES */
+
+/* .advantages {
+} */
 
 .advantages-box {
   width: 230px; /* как включить ширину padding-а в width? box-sizing? */
@@ -111,6 +165,18 @@ body {
   text-align: center;
 
   border: 1px solid black;
+}
+
+.bg-box-12 {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.bg-box-20 {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.bg-box-00 {
+  background: rgba(131, 179, 211);
 }
 
 .advantages-img {
@@ -138,17 +204,24 @@ body {
   color: #FFFFFF;
 }
 
-.bg-box-12 {
-  background: rgba(131, 179, 211, 0.12);
+/* .the-line {
 }
 
-.bg-box-20 {
-  background: rgba(131, 179, 211, 0.2);
+.advantages-list {
+} */
+
+/* SEARCH */
+
+.search {
+  width: 1200px;
+  height: 406px;
+
+  text-align: center;
+
+  border: 1px solid black;
 }
 
-.bg-box-00 {
-  background: rgba(131, 179, 211);
-}
+/* SUBSCRIBE */
 
 .subscribe {
   width: 1200px;
@@ -167,14 +240,27 @@ body {
   background-repeat: no-repeat;
 }
 
-.search {
-  width: 1200px;
-  height: 406px;
+/* FOOTER */
 
-  text-align: center;
-
-  border: 1px solid black;
+/* .footer {
 }
+
+.social-list {
+}
+
+.social-item {
+} */
+
+.phone {
+  font-size: 40px;
+  line-height: 40px;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* FILTER */
 
 .filter {
   padding: 35px 70px 70px;
@@ -185,11 +271,164 @@ body {
   /* background-repeat: no-repeat; */
 }
 
-.phone {
-  font-size: 40px;
-  line-height: 40px;
-  font-style: normal;
+.h1_catalog {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+/* BREADCRUMB */
+
+/* .breadcrumb {
+}
+
+.breadcrumb-item {
+} */
+
+.breadcrumb-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: capitalize;
   text-decoration: none;
+  color: #ffffff;
+}
+
+/* FORM */
+
+/* .catalog-filter {
+}
+
+.catalog-filter-group {
+} */
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+/* .catalog-filter-list {
+} */
+
+.catalog-filter-item {
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+/* .control {
+}
+
+.control-input {
+} */
+
+/* CATALOG */
+
+/* .catalog {
+} */
+
+.counter {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
   text-transform: uppercase;
+}
+
+/* .select-control {
+}
+
+.housing-list {
+} */
+
+.housing-card {
+  width: 300px;
+  height: 398px;
+  margin: 0 20px 20px 0;
+  padding: 20px;
+
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.housing-card-rating {
+  width: 140px;
+  height: 37px;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+
+  background: #F2F2F2;
+  border-radius: 4px;
+}
+
+.housing-card-title {
+  margin: 12px 0 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.housing-card-price {
+  margin: 15px 0;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.housing-card-link{
+  text-decoration: none;
+}
+
+/* .housing-card-image {
+}
+
+.stars {
+} */
+
+/* PAGINATION */
+
+/* .pagination {
+} */
+
+.pagination-item {
+  width: 60px;
+  height: 60px;
+  margin: 0 8px 8px 0;
+
+  text-align: center;
+
+  background: #82B3D3;
+  border-radius: 4px;
+}
+
+.pagination-current-item {
+  background: #F2F2F2;
+}
+
+.pagination-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+
+.pagination-current,
+.pagination-skip {
   color: #000000;
+}
+
+.pagination-skip {
+  background: #ffffff;
 }

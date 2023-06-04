@@ -126,13 +126,13 @@
 
         <section class="catalog" data-test="catalog">
           <h2 class="visually-hidden">Список гостиниц Седоны с фильтром</h2>
-          <span class="counter">Найдено гостиниц:</span>
+          <span class="counter">Найдено гостиниц: 38</span>
           <select class="select-control" aria-label="Сортировка">
             <option value="popular">Сначала популярное</option>
             <option value="cheap">Сначала дешёвое</option>
             <option value="expensive">Сначала дорогое</option>
           </select>
-          <a href="#" class="button button-light">
+          <a href="#" class="button">
             <span class="visually-hidden">Показать карточками</span>
           </a>
           <a class="button" href="#">
@@ -201,7 +201,6 @@
               <p class="housing-card-price">Гостиница</p>
               <p class="housing-card-price">от 1500 ₽</p>
               <a class="housing-card-btn-more button" href="#">Подробнее</a>
-              <a class="housing-card-btn-fav button">В избранное</a>
               <button class="housing-card-btn-fav button">В избранное</button>
               <span class="stars">
                 <img src="images/stars-2.svg" width="140" height="37" alt="Гостиница с двумя звездами">
@@ -211,7 +210,7 @@
           </ul>
 
           <ul class="pagination">
-            <li class="pagination-item">
+            <li class="pagination-item pagination-current-item">
               <a class="pagination-link pagination-current">1</a>
             </li>
             <li class="pagination-item">
@@ -223,8 +222,8 @@
             <li class="pagination-item">
               <a class="pagination-link" href="#">4</a>
             </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
+            <li class="pagination-item pagination-skip">
+              <a class="pagination-link pagination-skip" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
