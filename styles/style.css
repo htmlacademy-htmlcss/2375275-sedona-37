@@ -391,9 +391,10 @@ body {
 }
 
 /* .housing-card-image {
-}
+  display: block
+} */
 
-.stars {
+/* .stars {
 } */
 
 /* PAGINATION */
