@@ -246,10 +246,70 @@ body {
 }
 
 .social-list {
+} */
+
+.vk {
+  width: 24px;
+  height: 14px;
+  display: block;
+  mask: url(../images/socials/vk.svg) no-repeat center;
+  -webkit-mask: url(../images/socials/vk.svg) no-repeat center;
+  background: #83B3D3;
 }
 
-.social-item {
-} */
+.telegram {
+  width: 18px;
+  height: 16px;
+  display: block;
+  mask: url(../images/socials/telegram.svg) no-repeat center;
+  -webkit-mask: url(../images/socials/telegram.svg) no-repeat center;
+  background: #83B3D3;
+}
+
+.youtube {
+  width: 22px;
+  height: 17px;
+  display: block;
+  mask: url(../images/socials/youtube.svg) no-repeat center;
+  -webkit-mask: url(../images/socials/youtube.svg) no-repeat center;
+  background: #83B3D3;
+}
+
+.vk:hover,
+.vk:focus,
+.telegram:hover,
+.telegram:focus,
+.youtube:hover,
+.youtube:focus {
+  background: #68A2CA;
+}
+
+.vk:active,
+.telegram:active,
+.youtube:active {
+  background: rgba(104, 162, 202, 0.3);
+}
+
+.htmlacademy {
+  width: 115px;
+  height: 33px;
+  display: block;
+  mask: url(../images/html-academy-logo.svg) no-repeat center;
+  -webkit-mask: url(../images/html-academy-logo.svg) no-repeat center;
+  background: #000000;
+}
+
+.htmlacademy:hover {
+  background: #756157;
+}
+
+.htmlacademy:focus {
+  background: #756157;
+}
+
+.htmlacademy:active {
+  background: rgba(117, 97, 87, 0.3);
+}
 
 .phone {
   font-size: 40px;
@@ -258,6 +318,18 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+}
+
+.phone:hover {
+  color: #756157;
+}
+
+.phone:focus {
+  color: #756157;
+}
+
+.phone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 /* FILTER */
