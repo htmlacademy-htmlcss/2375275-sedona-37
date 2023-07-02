@@ -23,7 +23,6 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  color: #000000;
 
   background: #F2F2F2;
 }
@@ -66,11 +65,9 @@ body {
 
 /* HEADER */
 
-.site-header {
-  color: #000000;
-
+/* .site-header {
   background-color: #FFFFFF;
-}
+} */
 
 /* .navigation {
 }
@@ -91,12 +88,8 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  text-transform: capitalize;
   text-decoration: none;
-  text-align: center;
   color: #000000;
-
-  background-color: #FFFFFF;
 }
 
 /* .navigation-link-current {
@@ -117,13 +110,12 @@ body {
 
 .hero {
   text-align: center;
-  color: #000000;
 
   background-image: url("../pictures/index-background.jpg");
   background-position: top;
-  background-color: #FFFFFF;
   background-size: 1200px auto;
   background-repeat: no-repeat;
+  background-color: #82B3D3;
 }
 
 .logo {
@@ -131,8 +123,9 @@ body {
   margin-bottom: 20px;
 }
 
-/* .divider {
-} */
+.divider {
+  display: block;
+}
 
 .title-text {
   margin-top: 64px;
@@ -158,46 +151,40 @@ body {
 } */
 
 .advantages-box {
-  width: 230px; /* как включить ширину padding-а в width? box-sizing? */
+  width: 230px;
   height: 385px;
   padding: 0 85px;
 
   text-align: center;
-
-  border: 1px solid black;
 }
 
-.bg-box-12 {
+.bg-transparency-12 {
   background: rgba(131, 179, 211, 0.12);
 }
 
-.bg-box-20 {
+.bg-transparency-20 {
   background: rgba(131, 179, 211, 0.2);
 }
 
-.bg-box-00 {
+.bg-transparency-00 {
   background: rgba(131, 179, 211);
 }
 
 .advantages-img {
   width: 800px;
   height: 385px;
-
-  border: 1px solid black;
 }
 
 .advantages-h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .advantages-p {
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
 }
 
 .light-text {
@@ -217,20 +204,15 @@ body {
   height: 406px;
 
   text-align: center;
-
-  border: 1px solid black;
 }
 
 /* SUBSCRIBE */
 
 .subscribe {
   width: 1200px;
-  height: 414.86px;
+  height: 415px;
 
   text-align: center;
-
-  background-color: #FFFFFF;
-  border: 1px solid black;
 }
 
 .subscribe-index {
@@ -238,6 +220,7 @@ body {
   background-position: top;
   background-size: 1200px auto;
   background-repeat: no-repeat;
+  background-color: #82B3D3;
 }
 
 /* FOOTER */
@@ -246,6 +229,9 @@ body {
 }
 
 .social-list {
+}
+
+.social-item {
 } */
 
 .vk {
@@ -254,7 +240,7 @@ body {
   display: block;
   mask: url(../images/socials/vk.svg) no-repeat center;
   -webkit-mask: url(../images/socials/vk.svg) no-repeat center;
-  background: #83B3D3;
+  background-color: #83B3D3;
 }
 
 .telegram {
@@ -263,7 +249,7 @@ body {
   display: block;
   mask: url(../images/socials/telegram.svg) no-repeat center;
   -webkit-mask: url(../images/socials/telegram.svg) no-repeat center;
-  background: #83B3D3;
+  background-color: #83B3D3;
 }
 
 .youtube {
@@ -272,7 +258,7 @@ body {
   display: block;
   mask: url(../images/socials/youtube.svg) no-repeat center;
   -webkit-mask: url(../images/socials/youtube.svg) no-repeat center;
-  background: #83B3D3;
+  background-color: #83B3D3;
 }
 
 .vk:hover,
@@ -281,13 +267,13 @@ body {
 .telegram:focus,
 .youtube:hover,
 .youtube:focus {
-  background: #68A2CA;
+  background-color: #68A2CA;
 }
 
 .vk:active,
 .telegram:active,
 .youtube:active {
-  background: rgba(104, 162, 202, 0.3);
+  background-color: rgba(104, 162, 202, 0.3);
 }
 
 .htmlacademy {
@@ -296,19 +282,16 @@ body {
   display: block;
   mask: url(../images/html-academy-logo.svg) no-repeat center;
   -webkit-mask: url(../images/html-academy-logo.svg) no-repeat center;
-  background: #000000;
+  background-color: #000000;
 }
 
-.htmlacademy:hover {
-  background: #756157;
-}
-
+.htmlacademy:hover,
 .htmlacademy:focus {
-  background: #756157;
+  background-color: #756157;
 }
 
 .htmlacademy:active {
-  background: rgba(117, 97, 87, 0.3);
+  background-color: rgba(117, 97, 87, 0.3);
 }
 
 .phone {
@@ -316,14 +299,10 @@ body {
   line-height: 40px;
   font-style: normal;
   text-decoration: none;
-  text-transform: uppercase;
   color: #000000;
 }
 
-.phone:hover {
-  color: #756157;
-}
-
+.phone:hover,
 .phone:focus {
   color: #756157;
 }
@@ -339,7 +318,7 @@ body {
 
   background-image: url("../pictures/catalog-background.jpg");
   background-position: top;
-  background-color: #000000;
+  background-color: #82B3D3;
   /* background-repeat: no-repeat; */
 }
 
@@ -360,10 +339,8 @@ body {
 } */
 
 .breadcrumb-link {
-  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  text-transform: capitalize;
   text-decoration: none;
   color: #ffffff;
 }
@@ -381,7 +358,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* .catalog-filter-list {
@@ -390,7 +367,7 @@ body {
 .catalog-filter-item {
   font-size: 18px;
   line-height: 23px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* .control {
@@ -453,13 +430,13 @@ body {
 .housing-card-price {
   margin: 15px 0;
 
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
 
 .housing-card-link{
   text-decoration: none;
+  color: #000000;
 }
 
 /* .housing-card-image {
@@ -494,7 +471,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 60px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .pagination-current,
