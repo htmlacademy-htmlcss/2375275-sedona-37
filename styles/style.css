@@ -63,6 +63,15 @@ body {
 .housing-card-btn-fav {
 } */
 
+.sorting {
+  width: 44px;
+  height: 44px;
+  margin-left: 8px;
+
+  border: 2px #000000 solid;
+  border-radius: 4px;
+}
+
 /* HEADER */
 
 .site-header {
@@ -77,26 +86,30 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
 .navigation-user {
-  margin-right: 30px;
-  margin-left: auto
+  margin-right: 70px;
+  margin-left: auto;
+  align-items: center;
 }
 
 .navigation-item {
   list-style-type: none;
-  padding: 20px 16px;
 }
 
 .navigation-logo {
   margin-left: 70px;
-  margin-right: 30px;
+  margin-right: 28px;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -121,7 +134,7 @@ body {
 /* HERO */
 
 .hero {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   text-align: center;
 
   background-image: url("../pictures/index-background.jpg");
@@ -141,7 +154,7 @@ body {
 }
 
 .title-text {
-  margin-top: 66px;
+  margin-top: 64px;
   margin-bottom: 25px;
   grid-column: span 3;
 
@@ -169,15 +182,21 @@ body {
 }
 
 .advantages-box {
-  width: 230px;
+  width: 400px;
   height: 385px;
-  padding: 0 85px;
+  padding: 80px 85px;
+
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   text-align: center;
+}
+
+.advantages-list .advantages-box {
+  justify-content: space-between;
 }
 
 .bg-transparency-12 {
@@ -280,9 +299,9 @@ body {
 }
 
 .social-list {
-  width: 142px;
   height: 40px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -292,8 +311,9 @@ body {
   list-style-type: none;
 }
 
-/* .social-item {
-} */
+.social-item {
+  padding: 0 13px;
+}
 
 .vk {
   width: 24px;
@@ -409,6 +429,8 @@ body {
 } */
 
 .breadcrumb-link {
+  margin-right: 28px;
+
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
@@ -460,8 +482,10 @@ body {
   text-transform: uppercase;
 }
 
-/* .select-control {
-} */
+.select-control {
+  margin-left: auto;
+  margin-right: 70px;
+}
 
 .housing-list-header {
   width: 1060px;
@@ -525,6 +549,7 @@ body {
 }
 
 .housing-card-link{
+  display: block;
   text-decoration: none;
   color: #000000;
 }
@@ -565,6 +590,8 @@ body {
 }
 
 .pagination-link {
+  display: block;
+
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
