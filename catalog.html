@@ -41,7 +41,7 @@
               </span>
             </li>
             <li class="navigation-item">
-              <a class="button button-nav js-open-modal" href="#">ХОЧУ СЮДА!</a>
+              <a class="button-nav js-open-modal" href="#">ХОЧУ СЮДА!</a>
             </li>
           </ul>
         </nav>
@@ -62,6 +62,7 @@
               </li>
             </ul>
           </header>
+
           <section>
             <h2 class="visually-hidden">Фильтр списка гостиниц Седоны.</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -119,8 +120,8 @@
                 <!-- добавить ползунок -->
               </fieldset>
 
-              <button class="button btn-submit" type="submit">Применить</button>
-              <button class="button btn-reset" type="reset">Сбросить</button>
+              <button class="btn-submit" type="submit">Применить</button>
+              <button class="btn-reset" type="reset">Сбросить</button>
             </form>
           </section>
         </section>
@@ -135,13 +136,13 @@
               <option value="cheap">Сначала дешёвое</option>
               <option value="expensive">Сначала дорогое</option>
             </select>
-            <a href="#" class="button sorting">
+            <a href="#" class="sorting view-by-cards sorting-current">
               <span class="visually-hidden">Показать карточками</span>
             </a>
-            <a class="button sorting" href="#">
+            <a class="sorting view-by-one" href="#">
               <span class="visually-hidden">Показать по одной</span>
             </a>
-            <a class="button sorting" href="#">
+            <a class="sorting view-list" href="#">
               <span class="visually-hidden">Показать списоком</span>
             </a>
           </div>
@@ -154,12 +155,10 @@
                 <h3 class="housing-card-title">Amara Resort & Spa</h3>
               </a>
               <p class="housing-card-price">Гостиница</p>
-              <p class="housing-card-price">от 4000 ₽</p>
-              <a class="housing-card-btn-more button" href="#">Подробнее</a>
-              <button class="housing-card-btn-fav button">В избранное</button>
-              <span class="stars">
-                <img src="images/stars-4.svg" width="140" height="37" alt="Гостиница с четырмя звездами.">
-              </span>
+              <p class="housing-card-price">От 4000 ₽</p>
+              <a class="housing-card-btn-more" href="#">Подробнее</a>
+              <button class="housing-card-btn-fav">В избранное</button>
+              <img src="images/stars-4.svg" width="140" height="37" alt="Гостиница с четырмя звездами.">
               <p class="housing-card-rating">Рейтинг: 8,5</p>
             </li>
 
@@ -170,12 +169,10 @@
                 <h3 class="housing-card-title">Villas at Poco Diablo</h3>
               </a>
               <p class="housing-card-price">Гостиница</p>
-              <p class="housing-card-price">от 5000 ₽</p>
-              <a class="housing-card-btn-more button" href="#">Подробнее</a>
-              <button class="housing-card-btn-fav button">В избранное</button>
-              <span class="stars">
-                <img src="images/stars-4.svg" width="140" height="37" alt="Гостиница с четырмя звездами.">
-              </span>
+              <p class="housing-card-price">От 5000 ₽</p>
+              <a class="housing-card-btn-more" href="#">Подробнее</a>
+              <button class="housing-card-btn-fav housing-card-btn-infav">В избранном</button>
+              <img src="images/stars-4.svg" width="140" height="37" alt="Гостиница с четырмя звездами.">
               <p class="housing-card-rating">Рейтинг: 9,2</p>
             </li>
 
@@ -186,12 +183,10 @@
                 <h3 class="housing-card-title">Desert Quail Inn</h3>
               </a>
               <p class="housing-card-price">Гостиница</p>
-              <p class="housing-card-price">от 2500 ₽</p>
-              <a class="housing-card-btn-more button" href="#">Подробнее</a>
-              <button class="housing-card-btn-fav button">В избранное</button>
-              <span class="stars">
-                <img src="images/stars-3.svg" width="140" height="37" alt="Гостиница с тремя звездами.">
-              </span>
+              <p class="housing-card-price">От 2500 ₽</p>
+              <a class="housing-card-btn-more" href="#">Подробнее</a>
+              <button class="housing-card-btn-fav">В избранное</button>
+              <img src="images/stars-3.svg" width="140" height="37" alt="Гостиница с тремя звездами.">
               <p class="housing-card-rating">Рейтинг: 6,9</p>
             </li>
 
@@ -202,12 +197,10 @@
                 <h3 class="housing-card-title">GreenTree Inn</h3>
               </a>
               <p class="housing-card-price">Гостиница</p>
-              <p class="housing-card-price">от 1500 ₽</p>
-              <a class="housing-card-btn-more button" href="#">Подробнее</a>
-              <button class="housing-card-btn-fav button">В избранное</button>
-              <span class="stars">
-                <img src="images/stars-2.svg" width="140" height="37" alt="Гостиница с двумя звездами.">
-              </span>
+              <p class="housing-card-price">От 1500 ₽</p>
+              <a class="housing-card-btn-more" href="#">Подробнее</a>
+              <button class="housing-card-btn-fav">В избранное</button>
+              <img src="images/stars-2.svg" width="140" height="37" alt="Гостиница с двумя звездами.">
               <p class="housing-card-rating">Рейтинг: 5,0</p>
             </li>
           </ul>
@@ -237,9 +230,9 @@
         <section class="subscribe" data-test="subscribe">
           <h2 class="title-text dark">Подпишитесь на рассылку</h2>
           <p class="other-text dark">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <input type="email" name="email" placeholder="Ваш e-mail">
-            <input type="submit" value="Подписаться">
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="email-input" type="email" name="email" placeholder="Ваш e-mail">
+            <input class="subscribe-button" type="submit" value="Подписаться">
           </form>
         </section>
       </main>
