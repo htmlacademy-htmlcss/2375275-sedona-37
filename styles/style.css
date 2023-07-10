@@ -662,32 +662,49 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
 
   list-style-type: none;
 }
 
-/* .breadcrumb-item::after {
-content: '';
-position: absolute;
-background-image: url(../images/next-breadcrumbs.svg);
-background-position: top 5px left 10px;
-background-repeat: no-repeat;
-width: 8px;
-height: 11px;
-padding: 10px 10px;
+.breadcrumb-item {
+  margin-right: 27px;
 }
 
-.breadcrumb-item:last-child:after {
-  display: none;
-} */
+.breadcrumb-link,
+.breadcrumb-link:focus {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 38px;
 
-.breadcrumb-link {
-  margin-right: 28px;
-
-  font-size: 16px;
-  line-height: 21px;
   text-decoration: none;
   color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+  content: "";
+  width: 8px;
+  height: 11px;
+
+  background-image: url("../images/next-breadcrumbs.svg");
+  background-repeat: no-repeat;
+  background-position: 0;
+}
+
+.breadcrumb-link:hover {
+  color: rgba(255, 255, 255, 0.565);
+}
+
+.breadcrumb-link:active {
+  color: rgba(255, 255, 255, 0.302);
+}
+
+.breadcrumb-link:disabled {
+  color: #e5e5e5;
 }
 
 /* FORM */
