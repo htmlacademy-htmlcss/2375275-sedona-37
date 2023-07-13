@@ -769,6 +769,7 @@ body {
 
 .breadcrumb-item {
   margin-right: 27px;
+  position: relative;
 }
 
 .breadcrumb-link,
@@ -790,12 +791,13 @@ body {
   height: 11px;
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: -18px;
 
   background-image: url("../images/next-breadcrumbs.svg");
   background-repeat: no-repeat;
 
   content: "";
+  z-index: 100;
 }
 
 .breadcrumb-link:hover {
@@ -833,8 +835,14 @@ body {
   margin-right: 157px;
 }
 
+.catalog-filter-group:nth-child(3) {
+  width: 288px;
+  margin-right: 70px;
+}
+
 .catalog-filter-title {
   padding: 0;
+  margin-bottom: 32px;
 
   font-weight: 700;
   font-size: 20px;
@@ -851,6 +859,8 @@ body {
 }
 
 .catalog-filter-item {
+  margin-bottom: 16px;
+
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
@@ -868,14 +878,46 @@ body {
   color: #e5e5e5;;
 }
 
-.range {
-  padding-top: 33px;
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
 }
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+
+  background-image: url("../images/tick.svg");
+  background-repeat: no-repeat;
+
+  content: "";
+}
+
+.control-label {
+
+}
+
+/* .range {
+} */
 
 .price-field {
   display: inline;
   padding: 11px 20px;
-  width: 143px;
+  width: 103px;
 
   color: #000000;
   font-family: inherit;
@@ -887,6 +929,12 @@ body {
 
   outline: none;
   outline-offset: 0;
+}
+
+.price-field::-webkit-outer-spin-button,
+.price-field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .price-field:hover,
@@ -982,12 +1030,6 @@ body {
 
   cursor: pointer;
 }
-
-/* .control {
-}
-
-.control-input {
-} */
 
 /* CATALOG */
 
