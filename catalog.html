@@ -6,7 +6,7 @@
     <title>HTML Academy: Гостиницы Седоны</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="shortcut icon" href="images/favicons/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/favicon-120.png">
     <link rel="icon" type="image/png" sizes="160x160" href="images/favicons/favicon-160.png">
   </head>
@@ -15,7 +15,7 @@
     <div class="container">
       <header class="site-header" data-test="header">
         <nav class="navigation">
-          <a class="navigation-logo" href="index.html">
+          <a class="navigation-logo" href="#">
             <img class="page-header-logo" alt="Логотип города Седона." width="141" height="70" src="images/logo.svg">
           </a>
           <ul class="navigation-list">
@@ -26,22 +26,18 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
+              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <span class="visually-hidden">
-                <a class="navigation-link" href="#">Поиск</a>
-              </span>
+              <button class="button-nav-search" type="button" aria-label="поиск по сайту"></button>
             </li>
             <li class="navigation-item">
-              <span class="visually-hidden">
-                <a class="navigation-link" href="#">Избранное</a>
-              </span>
+              <button class="button-nav-fav" type="button" aria-label="список гостиниц в избранном"></button>
             </li>
             <li class="navigation-item">
-              <a class="button-nav js-open-modal" href="#">ХОЧУ СЮДА!</a>
+              <button class="button-nav" type="button">ХОЧУ СЮДА!</button>
             </li>
           </ul>
         </nav>
