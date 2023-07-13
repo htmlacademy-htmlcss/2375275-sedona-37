@@ -786,13 +786,16 @@ body {
 }
 
 .breadcrumb-item:not(:last-child)::after {
-  content: "";
   width: 8px;
   height: 11px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
 
   background-image: url("../images/next-breadcrumbs.svg");
   background-repeat: no-repeat;
-  background-position: 0;
+
+  content: "";
 }
 
 .breadcrumb-link:hover {
@@ -811,6 +814,7 @@ body {
 
 .catalog-filter {
   display: flex;
+  position: relative;
 }
 
 .catalog-filter-group {
@@ -868,9 +872,7 @@ body {
   padding-top: 33px;
 }
 
-.price-field{
-  position: relative;
-
+.price-field {
   display: inline;
   padding: 11px 20px;
   width: 143px;
@@ -906,14 +908,9 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.price-range {
-  display: flex;
-  gap: 2px;
-}
-
-.price-form-txt {
-  top: 13px;
-  right: 20px;
+.catalog-filter::before {
+  top: 69px;
+  right: 426px;
 
   font-family: inherit;
   position: absolute;
@@ -921,6 +918,27 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.114);
+
+  content: "от";
+}
+
+.catalog-filter::after {
+  top: 69px;
+  right: 281px;
+
+  font-family: inherit;
+  position: absolute;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.114);
+
+  content: "до";
+}
+
+.price-range {
+  display: flex;
+  gap: 2px;
 }
 
 .range-scale {
