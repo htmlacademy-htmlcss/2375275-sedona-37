@@ -6,7 +6,7 @@
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="shortcut icon" href="images/favicons/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/favicon-120.png">
     <link rel="icon" type="image/png" sizes="160x160" href="images/favicons/favicon-160.png">
   </head>
@@ -31,17 +31,13 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <span class="visually-hidden">
-                <a class="navigation-link" href="#">Поиск</a>
-              </span>
+              <button class="button-nav-search" type="button" aria-label="поиск по сайту"></button>
             </li>
             <li class="navigation-item">
-              <span class="visually-hidden">
-                <a class="navigation-link" href="#">Избранное</a>
-              </span>
+              <button class="button-nav-fav" type="button" aria-label="список гостиниц в избранном"></button>
             </li>
             <li class="navigation-item">
-              <a class="button-nav" href="catalog.html">ХОЧУ СЮДА!</a>
+              <button class="button-nav" type="button">ХОЧУ СЮДА!</button>
             </li>
           </ul>
         </nav>
@@ -123,7 +119,7 @@
           <h2 class="title-text light-text">Подпишитесь на рассылку</h2>
           <p class="other-text light-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="email-input" type="email" name="email" placeholder="Ваш e-mail">
+            <input class="email-input" type="email" name="email" placeholder="Ваш e-mail" required>
             <input class="subscribe-button" type="submit" value="Подписаться">
           </form>
         </section>
