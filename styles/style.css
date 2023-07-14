@@ -159,7 +159,7 @@ body {
 }
 
 .btn-reset {
-  padding: 8px 57px;
+  padding: 7px 55px;
 
   font-family: inherit;
   text-align: center;
@@ -588,7 +588,7 @@ body {
 
 .subscribe {
   display: flex;
-  padding: 96px 258px 104px 258px;
+  padding: 97px 258px 104px 258px;
   flex-direction: column;
   justify-content: center;
 
@@ -832,7 +832,7 @@ body {
 
 .catalog-filter-group:nth-child(2) {
   width: 151px;
-  margin-right: 157px;
+  margin-right: 152px;
 }
 
 .catalog-filter-group:nth-child(3) {
@@ -895,7 +895,17 @@ body {
   border-radius: 4px;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-mark-radio {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 20px;
+  height: 20px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
 .control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
   width: 20px;
@@ -907,8 +917,25 @@ body {
   content: "";
 }
 
-.control-label {
+.control-input[type="radio"]:checked + .control-mark-radio::after {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
 
+  background-color: #000000;
+  border-radius: 50%;
+
+  content: "";
+}
+
+.control-input:focus + .control-mark,
+.control-input:focus + .control-mark-radio {
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
+.control-label {
 }
 
 /* .range {
@@ -916,7 +943,7 @@ body {
 
 .price-field {
   display: inline;
-  padding: 11px 20px;
+  padding: 11px 18px;
   width: 103px;
 
   color: #000000;
@@ -1082,7 +1109,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 50px 70px 40px 70px;
+  margin: 49px 70px 40px 70px;
 }
 
 .housing-list {
