@@ -419,17 +419,6 @@ body {
   content: "12";
 }
 
-/* .page-header-logo {
-} */
-
-/* MAIN */
-
-/* .main-index {
-}
-
-.main-inner {
-} */
-
 /* HERO */
 
 .hero {
@@ -935,12 +924,6 @@ body {
   box-shadow: 0 0 0 3px #83b3d3;
 }
 
-/* .control-label {
-} */
-
-/* .range {
-} */
-
 .price-field {
   display: inline;
   padding: 11px 18px;
@@ -1059,9 +1042,6 @@ body {
 }
 
 /* CATALOG */
-
-/* .catalog {
-} */
 
 .counter {
   font-weight: 700;
