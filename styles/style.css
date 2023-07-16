@@ -27,6 +27,23 @@ body {
   background: #F2F2F2;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: input;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+  appearance: input;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -966,11 +983,11 @@ div.advantages-box .advantages-h3::after {
   outline-offset: 0;
 }
 
-.price-field::-webkit-outer-spin-btn,
+/* .price-field::-webkit-outer-spin-btn,
 .price-field::-webkit-inner-spin-btn {
   appearance: none;
   margin: 0;
-}
+} */
 
 .price-field:hover,
 .price-field:active {
@@ -1259,6 +1276,7 @@ div.advantages-box .advantages-h3::after {
 
   padding: 64px 70px 64px 70px;
   margin: auto;
+  max-width: 576px;
 
   background-color: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
@@ -1271,8 +1289,7 @@ div.advantages-box .advantages-h3::after {
 }
 
 .modal-search .title-text {
-  margin: 0;
-  margin-bottom: 64px;
+  margin: 0 35px 64px 0;
 
   text-align: left;
 }
@@ -1312,19 +1329,13 @@ div.advantages-box .advantages-h3::after {
 
 .modal-warn {
   display: block;
-  margin: 4px 0 23px 137px;
-  padding: 0 20px;
+  margin: 2px 0 23px 137px;
+  padding: 0 19px;
 
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-}
-
-.modal-form {
-  width: 577px;
-
-  row-gap: 48px;
 }
 
 .modal-form .modal-warn:nth-child(2) {
@@ -1417,11 +1428,11 @@ div.advantages-box .advantages-h3::after {
 }
 
 .btn-add {
-  border-radius: 4px 0 0 4px;
+  border-radius: 0 4px 4px 0;
 }
 
 .btn-low {
-  border-radius: 0 4px 4px 0;
+  border-radius: 4px 0 0 4px;
 }
 
 .btn-add:hover path,
@@ -1461,12 +1472,6 @@ div.advantages-box .advantages-h3::after {
 
   border: 3px solid #f2f2f2;
   background-color: #f2f2f2;
-}
-
-.field-count::-webkit-outer-spin-btn,
-.field-count::-webkit-inner-spin-btn {
-  appearance: none;
-  margin: 0;
 }
 
 .hint {
