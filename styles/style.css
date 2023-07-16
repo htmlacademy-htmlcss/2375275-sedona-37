@@ -46,6 +46,7 @@ input[type="number"]:focus {
 
 .container {
   max-width: 1200px;
+  min-width: 1200px;
   margin: 0 auto;
 
   background: #FFFFFF;
@@ -96,6 +97,8 @@ input[type="number"]:focus {
 .btn-nav-fav {
   width: 44px;
   height: 60px;
+
+  text-decoration: none;
 
   background-color: #ffffff;
   background-repeat: no-repeat;
@@ -169,7 +172,7 @@ input[type="number"]:focus {
 }
 
 .btn-submit:active {
-  color: rgba(255, 255, 255, 0.302);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #82b3d3;
 }
 
@@ -195,7 +198,7 @@ input[type="number"]:focus {
 }
 
 .btn-reset:hover {
-  color: rgba(255, 255, 255, 0.553);
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .btn-reset:focus {
@@ -204,7 +207,7 @@ input[type="number"]:focus {
 }
 
 .btn-reset:active {
-  color: rgba(255, 255, 255, 0.302);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .subscribe-btn {
@@ -326,7 +329,7 @@ input[type="number"]:focus {
 .sorting {
   min-width: 44px;
   height: 44px;
-  margin-left: 8px;
+  margin-left: 9px;
 
   border: 2px #E5E5E5 solid;
   border-radius: 4px;
@@ -423,6 +426,7 @@ input[type="number"]:focus {
 
 .btn-nav-search {
   background-image: url("../images/search.svg");
+  background-position-y: 22px;
 }
 
 .btn-nav-fav {
@@ -477,6 +481,7 @@ input[type="number"]:focus {
 .title-text {
   margin-top: 64px;
   margin-bottom: 20px;
+  padding: 0 100px;
   grid-column: span 3;
 
   font-weight: 700;
@@ -493,6 +498,7 @@ input[type="number"]:focus {
 .other-text {
   margin-top: 0;
   margin-bottom: 64px;
+  padding: 0 100px;
   grid-column: span 3;
 
   text-align: center;
@@ -522,7 +528,7 @@ input[type="number"]:focus {
 
 .advantages-box {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   padding: 80px 85px;
 
   display: flex;
@@ -603,7 +609,7 @@ div.advantages-box .advantages-h3::after {
 /* SEARCH */
 
 .search {
-  padding: 96px 304px;
+  padding: 96px 100px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -770,7 +776,6 @@ div.advantages-box .advantages-h3::after {
 
 .filter {
   padding: 35px 70px 57px;
-  /* height: 412px; */
   box-sizing: border-box;
 
   background-image: url("../images/pictures/catalog-background.jpg");
@@ -1044,7 +1049,7 @@ div.advantages-box .advantages-h3::after {
   margin-top: 43px;
   position: relative;
   height: 4px;
-  background-color: rgba(255, 255, 255, 0.145);
+  background-color: rgba(255, 255, 255, 0.15);
   width: 287px;
 }
 
@@ -1120,7 +1125,7 @@ div.advantages-box .advantages-h3::after {
 }
 
 .select-control:disabled {
-  border: 2px solid rgba(0, 0, 0, 0.302);
+  border: 2px solid rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.302);
 }
 
@@ -1134,22 +1139,20 @@ div.advantages-box .advantages-h3::after {
 
 .housing-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin: 0;
-  margin-left: 70px;
-  margin-right: 70px;
+  grid-template-columns: repeat(3, 342px);
+  gap: 18px;
+  margin: 0 70px;
   padding: 0;
 
   list-style-type: none;
 }
 
 .housing-card {
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 140px 140px;
   gap: 16px 20px;
-  width: 298px;
-  height: 396px;
+  width: 340px;
   margin: 0;
   padding: 20px;
 
@@ -1159,7 +1162,6 @@ div.advantages-box .advantages-h3::after {
 
 .housing-card-rating {
   width: 140px;
-  height: 37px;
   margin: 0;
 
   font-size: 16px;
@@ -1174,7 +1176,7 @@ div.advantages-box .advantages-h3::after {
 
 .housing-card-title {
   grid-column: span 2;
-  margin: 12px 0 0 0;
+  margin: 11px 0 0 0;
 
   font-weight: 700;
   font-size: 24px;
@@ -1211,8 +1213,8 @@ div.advantages-box .advantages-h3::after {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  padding-top: 40px;
-  margin: 32px 70px 59px 71px;
+  padding-top: 32px;
+  margin: 39px 70px 59px 70px;
 
   border-top: 1px solid #E6E6E6;
 
@@ -1285,7 +1287,7 @@ div.advantages-box .advantages-h3::after {
 }
 
 .modal-search::backdrop {
-  background-color: rgba(242, 242, 242, 0.80);
+  background-color: rgba(242, 242, 242, 0.8);
 }
 
 .modal-search .title-text {
@@ -1405,7 +1407,7 @@ div.advantages-box .advantages-h3::after {
 }
 
 .btn-modal-submit:active {
-  color: rgba(255, 255, 255, 0.302);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #82b3d3;
 }
 
