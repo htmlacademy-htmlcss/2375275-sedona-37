@@ -34,14 +34,14 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 input[type="number"] {
-  -moz-appearance: textfield;
-  appearance: input;
+  -webkit-appearance: input;
+          appearance: input;
 }
 
 input[type="number"]:hover,
 input[type="number"]:focus {
-  -moz-appearance: number-input;
-  appearance: input;
+  -webkit-appearance: input;
+          appearance: input;
 }
 
 .container {
@@ -616,7 +616,6 @@ div.advantages-box .advantages-h3::after {
   justify-content: center;
 }
 
-
 /* SUBSCRIBE */
 
 .subscribe {
@@ -1115,7 +1114,8 @@ div.advantages-box .advantages-h3::after {
   background-repeat: no-repeat;
   background-position: center right 20px;
 
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   cursor: pointer;
   outline: none;
 }
