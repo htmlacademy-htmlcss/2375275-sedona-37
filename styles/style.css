@@ -62,6 +62,7 @@ input[type="number"]:focus {
 .btn-nav {
   padding: 8px 34px;
   margin-bottom: 2px;
+  max-width: 300px;
 
   font-family: inherit;
   font-weight: 700;
@@ -208,7 +209,9 @@ input[type="number"]:focus {
 .subscribe-btn {
   margin: 0;
   padding: 8px 50px;
+  max-width: 300px;
 
+  white-space: normal;
   font-weight: 700;
   font-size: 20px;
   font-style: normal;
@@ -320,7 +323,7 @@ input[type="number"]:focus {
 }
 
 .sorting {
-  width: 44px;
+  min-width: 44px;
   height: 44px;
   margin-left: 8px;
 
@@ -1097,6 +1100,7 @@ div.advantages-box .advantages-h3::after {
   margin-right: 62px;
   padding: 12px 18px;
   width: 292px;
+  min-width: 230px;
 
   font: inherit;
   color: #333333;
@@ -1126,8 +1130,7 @@ div.advantages-box .advantages-h3::after {
 }
 
 .housing-list-header {
-  width: 1060px;
-  height: 49px;
+  min-height: 49px;
   display: flex;
   align-items: center;
   justify-content: space-between;
