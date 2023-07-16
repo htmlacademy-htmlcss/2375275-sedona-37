@@ -660,7 +660,7 @@ div.advantages-box .advantages-h3::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 70px 30px 70px;
+  padding: 45px 70px 30px 70px;
   margin: 0;
 
   font-size: 16px;
@@ -673,12 +673,14 @@ div.advantages-box .advantages-h3::after {
   justify-content: space-around;
   align-items: center;
   padding: 0;
+  margin: 0;
 
   list-style-type: none;
 }
 
 .social-item {
   padding: 0 13px;
+  height: 40px;
 }
 
 .vk,
@@ -686,7 +688,7 @@ div.advantages-box .advantages-h3::after {
 .youtube {
   display: block;
   width: 24px;
-  height: 14px;
+  height: 40px;
 
   background-color: #83B3D3;
 
@@ -696,15 +698,13 @@ div.advantages-box .advantages-h3::after {
 
 .telegram {
   width: 18px;
-  height: 16px;
 
   mask: url("../images/socials/telegram.svg") no-repeat center;
   -webkit-mask: url("../images/socials/telegram.svg") no-repeat center;
 }
 
 .youtube {
-  width: 22px;
-  height: 17px;
+  width: 24px;
 
   mask: url("../images/socials/youtube.svg") no-repeat center;
   -webkit-mask: url("../images/socials/youtube.svg") no-repeat center;
@@ -727,8 +727,8 @@ div.advantages-box .advantages-h3::after {
 
 .htmlacademy {
   display: block;
-  width: 115px;
-  height: 33px;
+  min-width: 114px;
+  height: 32px;
 
   background-color: #000000;
 
@@ -1211,9 +1211,10 @@ div.advantages-box .advantages-h3::after {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   padding-top: 40px;
-  margin: 39px 70px 60px 70px;
+  margin: 32px 70px 59px 71px;
 
   border-top: 1px solid #E6E6E6;
 
@@ -1221,9 +1222,10 @@ div.advantages-box .advantages-h3::after {
 }
 
 .pagination-item {
-  width: 60px;
+  min-width: 44px;
   height: 60px;
-  margin-right: 8px;
+  margin: 8px 8px 0 0;
+  padding: 0 8px 0 8px;
 
   text-align: center;
 
