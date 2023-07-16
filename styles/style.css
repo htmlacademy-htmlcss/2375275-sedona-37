@@ -425,7 +425,7 @@ body {
   margin-bottom: 5px;
   text-align: center;
 
-  background-image: url("../pictures/index-background.jpg");
+  background-image: url("../images/pictures/index-background.jpg");
   background-position: top;
   background-size: 1200px auto;
   background-repeat: no-repeat;
@@ -585,7 +585,7 @@ body {
 }
 
 .subscribe-index {
-  background-image: url("../pictures/index-canyon-blur.jpg");
+  background-image: url("../images/pictures/index-canyon-blur.jpg");
   background-position: top;
   background-size: 1200px auto;
   background-repeat: no-repeat;
@@ -732,7 +732,7 @@ body {
   height: 412px;
   box-sizing: border-box;
 
-  background-image: url("../pictures/catalog-background.jpg");
+  background-image: url("../images/pictures/catalog-background.jpg");
   background-position: top;
   background-color: #82B3D3;
 }
