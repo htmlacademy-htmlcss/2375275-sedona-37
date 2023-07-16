@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'PT sans';
+  font-family: "PT sans";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/ptsans-400.woff2') format(woff2);
+  src: url("../fonts/ptsans-400.woff2") format(woff2);
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'PT sans';
+  font-family: "PT sans";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/ptsans-700.woff2') format(woff2);
+  src: url("../fonts/ptsans-700.woff2") format(woff2);
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@ body {
   box-sizing: border-box;
   margin: 0;
 
-  font-family: 'PT sans', sans-serif;
+  font-family: "PT sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -91,7 +91,7 @@ body {
   padding: 8px 50px;
   margin: 0;
 
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -197,7 +197,7 @@ body {
   font-style: normal;
   line-height: 36px;
   text-transform: uppercase;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: #FFFFFF;
 
   background: #82B3D3;
@@ -213,7 +213,7 @@ body {
 }
 
 .subscribe-button:active {
-  color: rgba(255, 255, 255, 0.302);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #82b3d3;
 }
 
@@ -255,7 +255,7 @@ body {
 .housing-card-btn-fav {
   padding: 8px 18px;
 
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -295,7 +295,7 @@ body {
 
 .housing-card-btn-infav:active {
   background-color: #7db54f;
-  color: rgba(255, 255, 255, 0.302);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .housing-card-btn-infav:disabled {
@@ -311,7 +311,9 @@ body {
   border-radius: 4px;
 }
 
-.view-by-cards {
+.view-by-cards,
+.view-by-one,
+.view-list {
   background-image: url("../images/view-by-cards.svg");
   background-repeat: no-repeat;
   background-size: 16px 14px;
@@ -320,16 +322,10 @@ body {
 
 .view-by-one {
   background-image: url("../images/view-by-one.svg");
-  background-repeat: no-repeat;
-  background-size: 16px 14px;
-  background-position: center;
 }
 
 .view-list {
   background-image: url("../images/view-list.svg");
-  background-repeat: no-repeat;
-  background-size: 16px 14px;
-  background-position: center;
 }
 
 .sorting-current,
@@ -546,16 +542,6 @@ body {
   color: #FFFFFF;
 }
 
-.the-line {
-  height: 2px;
-  width: 60px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-
-  border: none;
-  background: rgba(51, 51, 51, 0.3);
-}
-
 .advantages-list {
   margin: 0;
   padding: 0;
@@ -563,6 +549,20 @@ body {
   grid-template-columns: repeat(3, 400px);
 
   list-style-type: none;
+}
+
+div.advantages-box .advantages-h3::after {
+  display: block;
+  width: 60px;
+  margin: 29px auto 30px;
+
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+
+  content: "";
+}
+
+.bg-transparency-00 h3.advantages-h3::after {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 /* SEARCH */
@@ -602,7 +602,7 @@ body {
 .email-input {
   padding-left: 20px;
   width: 452px;
-  min-height: 52px;
+  min-height: 50px;
 
   font-family: inherit;
   font-weight: 400;
@@ -650,31 +650,33 @@ body {
   padding: 0 13px;
 }
 
-.vk {
+.vk,
+.telegram,
+.youtube {
+  display: block;
   width: 24px;
   height: 14px;
-  display: block;
-  mask: url(../images/socials/vk.svg) no-repeat center;
-  -webkit-mask: url(../images/socials/vk.svg) no-repeat center;
+
   background-color: #83B3D3;
+
+  mask: url("../images/socials/vk.svg") no-repeat center;
+  -webkit-mask: url("../images/socials/vk.svg") no-repeat center;
 }
 
 .telegram {
   width: 18px;
   height: 16px;
-  display: block;
-  mask: url(../images/socials/telegram.svg) no-repeat center;
-  -webkit-mask: url(../images/socials/telegram.svg) no-repeat center;
-  background-color: #83B3D3;
+
+  mask: url("../images/socials/telegram.svg") no-repeat center;
+  -webkit-mask: url("../images/socials/telegram.svg") no-repeat center;
 }
 
 .youtube {
   width: 22px;
   height: 17px;
-  display: block;
-  mask: url(../images/socials/youtube.svg) no-repeat center;
-  -webkit-mask: url(../images/socials/youtube.svg) no-repeat center;
-  background-color: #83B3D3;
+
+  mask: url("../images/socials/youtube.svg") no-repeat center;
+  -webkit-mask: url("../images/socials/youtube.svg") no-repeat center;
 }
 
 .vk:hover,
@@ -693,12 +695,14 @@ body {
 }
 
 .htmlacademy {
+  display: block;
   width: 115px;
   height: 33px;
-  display: block;
-  mask: url(../images/html-academy-logo.svg) no-repeat center;
-  -webkit-mask: url(../images/html-academy-logo.svg) no-repeat center;
+
   background-color: #000000;
+
+  mask: url("../images/html-academy-logo.svg") no-repeat center;
+  -webkit-mask: url("../images/html-academy-logo.svg") no-repeat center;
 }
 
 .htmlacademy:hover,
@@ -731,7 +735,7 @@ body {
 
 .filter {
   padding: 35px 70px 70px;
-  height: 412px;
+  /* height: 412px; */
   box-sizing: border-box;
 
   background-image: url("../images/pictures/catalog-background.jpg");
@@ -750,24 +754,31 @@ body {
 /* BREADCRUMB */
 
 .breadcrumb {
-  margin: 0;
+  margin: 0 0 38px 0;
   padding: 0;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
 
   list-style-type: none;
 }
 
 .breadcrumb-item {
-  margin-right: 27px;
-  position: relative;
+  display: flex;
+  margin-right: 3px;
+}
+
+.breadcrumbs-link-index {
+  width: 13px;
+  height: 19px;
+
+  background-image: url("../images/home-breadcrumb.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 .breadcrumb-link,
 .breadcrumb-link:focus {
-  display: flex;
   margin-top: 5px;
-  margin-bottom: 38px;
 
   text-decoration: none;
   color: #ffffff;
@@ -778,25 +789,23 @@ body {
 }
 
 .breadcrumb-item:not(:last-child)::after {
-  width: 8px;
-  height: 11px;
-  position: absolute;
-  top: 10px;
-  right: -18px;
+  width: 21px;
+  height: 20px;
+  display: block;
+  margin: 8px 0 0 4px;
 
   background-image: url("../images/next-breadcrumbs.svg");
   background-repeat: no-repeat;
 
   content: "";
-  z-index: 100;
 }
 
 .breadcrumb-link:hover {
-  color: rgba(255, 255, 255, 0.565);
+  opacity: 0.6;
 }
 
 .breadcrumb-link:active {
-  color: rgba(255, 255, 255, 0.302);
+  opacity: 0.3;
 }
 
 .breadcrumb-link:disabled {
@@ -1496,7 +1505,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  background-image: url('../images/triangle.svg');
+  background-image: url("../images/triangle.svg");
 
   content: "";
 }
