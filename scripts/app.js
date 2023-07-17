@@ -1,11 +1,11 @@
-const buttonOpen = document.querySelector('.button-nav');
-const buttonClose = document.querySelector('.btn-close');
+const btnOpen = document.querySelector('.btn-nav');
+const btnClose = document.querySelector('.btn-close');
 const dialog = document.querySelector('.modal-search');
 
-buttonOpen.addEventListener('click', () => {
+btnOpen.addEventListener('click', () => {
   dialog.showModal();
 });
 
-buttonClose.addEventListener('click', () => {
+btnClose.addEventListener('click', () => {
   dialog.close();
 });

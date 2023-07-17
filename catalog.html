@@ -20,24 +20,30 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+              <a class="navigation-link" href="index.html">
+                <p class="navigation-text">Главная</p>
+              </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О Седоне</a>
+              <a class="navigation-link" href="#">
+                <p class="navigation-text">О Седоне</p>
+              </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link" href="catalog.html">
+                <p class="navigation-text navigation-current">Гостиницы</p>
+              </a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <button class="button-nav-search" type="button" aria-label="поиск по сайту"></button>
+              <button class="btn-nav-search" type="button" aria-label="поиск по сайту"></button>
             </li>
             <li class="navigation-item">
-              <button class="button-nav-fav" type="button" aria-label="список гостиниц в избранном"></button>
+              <a class="btn-nav-fav" href="#" aria-label="список гостиниц в избранном"></a>
             </li>
             <li class="navigation-item">
-              <button class="button-nav" type="button">ХОЧУ СЮДА!</button>
+              <button class="btn-nav" type="button">ХОЧУ СЮДА!</button>
             </li>
           </ul>
         </nav>
@@ -49,8 +55,7 @@
             <h1 class="h1_catalog light-text">Гостиницы Седоны</h1>
             <ul class="breadcrumb">
               <li class="breadcrumb-item">
-                <a class="breadcrumb-link" href="index.html">
-                  <img src="images/home-breadcrumb.svg" width="13" height="13" alt="На главную страницу.">
+                <a class="breadcrumb-link breadcrumbs-link-index" href="index.html">
                 </a>
               </li>
               <li class="breadcrumb-item">
@@ -133,10 +138,10 @@
                   <div class="range-scale">
                     <div class="range-bar">
                       <div class="range-toggle-min">
-                        <span class="visually-hidden">Изменить минимальную цену</span>
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
                       </div>
                       <div class="range-toggle-max">
-                        <span class="visually-hidden">Изменить максимальную цену</span>
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
                       </div>
                     </div>
                   </div>
@@ -152,7 +157,7 @@
         </section>
 
         <section class="catalog" data-test="catalog">
-          <h2 class="visually-hidden">Список гостиниц Седоны с фильтром</h2>
+          <h2 class="visually-hidden">Список гостиниц Седоны с фильтром.</h2>
 
           <div class="housing-list-header">
             <span class="counter">Найдено гостиниц: 38</span>
@@ -162,20 +167,20 @@
               <option value="expensive">Сначала дорогие</option>
             </select>
             <a href="#" class="sorting view-by-cards sorting-current">
-              <span class="visually-hidden">Показать карточками</span>
+              <span class="visually-hidden">Показать карточками.</span>
             </a>
             <a class="sorting view-by-one" href="#">
-              <span class="visually-hidden">Показать по одной</span>
+              <span class="visually-hidden">Показать по одной.</span>
             </a>
             <a class="sorting view-list" href="#">
-              <span class="visually-hidden">Показать списоком</span>
+              <span class="visually-hidden">Показать списоком.</span>
             </a>
           </div>
 
           <ul class="housing-list">
             <li class="housing-card">
               <a class="housing-card-link" href="#">
-                <img class="housing-card-image" src="pictures/amara-resort-spa.jpg" width="300" height="212"
+                <img class="housing-card-image" src="images/pictures/amara-resort-spa.jpg" width="300" height="212"
                   alt="Вид из окна номера в гостинице Amara Resort & Spa.">
                 <h3 class="housing-card-title">Amara Resort & Spa</h3>
               </a>
@@ -189,7 +194,7 @@
 
             <li class="housing-card">
               <a class="housing-card-link" href="#">
-                <img class="housing-card-image" src="pictures/villas-at-poco-diablo.jpg" width="300" height="212"
+                <img class="housing-card-image" src="images/pictures/villas-at-poco-diablo.jpg" width="300" height="212"
                   alt="Вид из окна номера в гостинице Villas at Poco Diablo.">
                 <h3 class="housing-card-title">Villas at Poco Diablo</h3>
               </a>
@@ -203,7 +208,7 @@
 
             <li class="housing-card">
               <a class="housing-card-link" href="#">
-                <img class="housing-card-image" src="pictures/desert-quail-inn.jpg" width="300" height="212"
+                <img class="housing-card-image" src="images/pictures/desert-quail-inn.jpg" width="300" height="212"
                   alt="Вид из окна номера в гостинице Desert Quail Inn.">
                 <h3 class="housing-card-title">Desert Quail Inn</h3>
               </a>
@@ -217,7 +222,7 @@
 
             <li class="housing-card">
               <a class="housing-card-link" href="#">
-                <img class="housing-card-image" src="pictures/green-tree-inn.jpg" width="300" height="212"
+                <img class="housing-card-image" src="images/pictures/green-tree-inn.jpg" width="300" height="212"
                   alt="Вид из окна номера в гостинице GreenTree Inn.">
                 <h3 class="housing-card-title">GreenTree Inn</h3>
               </a>
@@ -257,7 +262,7 @@
           <p class="other-text dark">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="email-input" type="email" name="email" placeholder="Ваш e-mail" required>
-            <input class="subscribe-button" type="submit" value="Подписаться">
+            <input class="subscribe-btn" type="submit" value="Подписаться">
           </form>
         </section>
       </main>
@@ -289,10 +294,10 @@
       </footer>
     </div>
 
-    <dialog class="modal-search">
+    <dialog class="modal-search" data-test="modal">
       <h2 class="title-text">Поиск гостиницы в Седоне</h2>
       <button class="btn-close" type="button">
-        <span class="visually-hidden">Закрыть</span>
+        <span class="visually-hidden">Закрыть окно.</span>
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479
                   1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982
@@ -302,12 +307,12 @@
       <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="modal-first-day">
           <span class="modal-text">Дата Заезда:</span>
-          <input class="field-day" type="text" name="first-day" value="27 апреля 2020" required>
+          <input class="field-day" type="date" name="first-day" value="2020-04-27" required>
         </label>
         <span class="modal-warn"> Мы не можем отправить вас в прошлое. </span>
         <label class="modal-last-day">
           <span class="modal-text">Дата Выезда:</span>
-          <input class="field-day" type="text" name="last-day" value="1 сентября 2023" required>
+          <input class="field-day" type="date" name="last-day" value="2023-09-01" required>
         </label>
         <span class="modal-warn"> На эти даты есть свободные номера. Пока есть. </span>
         <div class="modal-guests">
@@ -336,7 +341,7 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"></path>
                 </svg>
               </button>
-              <span class="hint-text" role="hint" id="hint-label">
+              <span class="hint-text" id="hint-label">
                 Укажите количество детей, которые будут с вами,
                 возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
               </span>
@@ -357,11 +362,11 @@
             </div>
           </div>
         </div>
-        <button class="button-modal-submit" type="submit">НАЙТИ</button>
+        <button class="btn-modal-submit" type="submit">НАЙТИ</button>
       </form>
     </dialog>
 
-    <script src="/scripts/app.js" defer></script>
+    <script src="scripts/app.js" defer></script>
   </body>
 
 </html>
