@@ -166,15 +166,17 @@
               <option value="cheap">Сначала дешёвые</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
-            <a href="#" class="sorting view-by-cards sorting-current">
-              <span class="visually-hidden">Показать карточками.</span>
-            </a>
-            <a class="sorting view-by-one" href="#">
-              <span class="visually-hidden">Показать по одной.</span>
-            </a>
-            <a class="sorting view-list" href="#">
-              <span class="visually-hidden">Показать списоком.</span>
-            </a>
+            <div class="view">
+              <a class="sorting view-by-cards sorting-current" href="#">
+                <span class="visually-hidden">Показать карточками.</span>
+              </a>
+              <a class="sorting view-by-one" href="#">
+                <span class="visually-hidden">Показать по одной.</span>
+              </a>
+              <a class="sorting view-list" href="#">
+                <span class="visually-hidden">Показать списоком.</span>
+              </a>
+            </div>
           </div>
 
           <ul class="housing-list">
@@ -307,12 +309,12 @@
       <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="modal-first-day">
           <span class="modal-text">Дата Заезда:</span>
-          <input class="field-day" type="date" name="first-day" value="2020-04-27" required>
+          <input class="field-day" type="text" name="first-day" value="27 апреля 2020" required>
         </label>
         <span class="modal-warn"> Мы не можем отправить вас в прошлое. </span>
         <label class="modal-last-day">
           <span class="modal-text">Дата Выезда:</span>
-          <input class="field-day" type="date" name="last-day" value="2023-09-01" required>
+          <input class="field-day" type="text" name="last-day" value="1 сентября 2023" required>
         </label>
         <span class="modal-warn"> На эти даты есть свободные номера. Пока есть. </span>
         <div class="modal-guests">

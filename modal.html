@@ -11,25 +11,25 @@
   <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
     <label class="modal-first-day">
       <span class="modal-text">Дата Заезда:</span>
-      <input class="field-day" type="date" name="first-day" value="2020-04-27" required>
+      <input class="field-day" type="text" name="first-day" value="27 апреля 2020" required>
     </label>
     <span class="modal-warn"> Мы не можем отправить вас в прошлое. </span>
     <label class="modal-last-day">
       <span class="modal-text">Дата Выезда:</span>
-      <input class="field-day" type="date" name="last-day" value="2023-09-01" required>
+      <input class="field-day" type="text" name="last-day" value="1 сентября 2023" required>
     </label>
     <span class="modal-warn"> На эти даты есть свободные номера. Пока есть. </span>
     <div class="modal-guests">
       <div class="modal-adult">
         <span class="modal-text">Взрослые:</span>
         <div class="btn-count">
-          <button class="btn-low" type="button" aria-label="Уменьшить количество взрослых гостей.">
+          <button class="btn-low" type="button" aria-label="уменьшить количество взрослых гостей">
             <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path class="btn-low" d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"></path>
             </svg>
           </button>
           <input class="field-count" type="number" name="adult-count" min="1" max="50" value="2" step="1" required>
-          <button class="btn-add" type="button" aria-label="Увеличить количество взрослых гостей.">
+          <button class="btn-add" type="button" aria-label="увеличить количество взрослых гостей">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path class="btn-add" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3">
               </path>
@@ -40,7 +40,7 @@
       <div class="modal-child">
         <span class="modal-text">Дети:</span>
         <span class="hint">
-          <button class="hint-toggle" type="button" aria-label="Всплывающая подсказка.">
+          <button class="hint-toggle" type="button" aria-label="подсказка">
             <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"></path>
             </svg>
@@ -51,13 +51,13 @@
           </span>
         </span>
         <div class="btn-count">
-          <button class="btn-low" type="button" aria-label="Уменьшить количество детей.">
+          <button class="btn-low" type="button" aria-label="уменьшить количество детей">
             <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path class="btn-low" d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"></path>
             </svg>
           </button>
           <input class="field-count" type="number" name="child-count" min="0" max="50" step="1" value="2" required>
-          <button class="btn-add" type="button" aria-label="Увеличить количество детей.">
+          <button class="btn-add" type="button" aria-label="увеличить количество детей">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path class="btn-add" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3">
               </path>
