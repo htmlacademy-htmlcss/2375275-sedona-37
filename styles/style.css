@@ -388,7 +388,6 @@ body {
 .navigation {
   display: flex;
   margin: 0 70px;
-  /* height: 64px; */
 }
 
 .navigation-list {
@@ -397,6 +396,8 @@ body {
   margin: 0;
   padding: 0;
   max-width: 470px;
+
+  z-index: 1;
 }
 
 .navigation-user {
@@ -477,7 +478,9 @@ body {
 /* HERO */
 
 .hero {
+  height: 485px;
   margin-bottom: 5px;
+  position: relative;
   text-align: center;
 
   background-image: url("../images/pictures/index-background.jpg");
@@ -485,6 +488,19 @@ body {
   background-size: 1200px auto;
   background-repeat: no-repeat;
   background-color: #82b3d3;
+}
+.hero::after {
+  position: absolute;
+
+  display: block;
+  width: 1200px;
+  height: 57px;
+
+  background-image: url(../images/divider.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  content: "";
 }
 
 .logo {
@@ -559,7 +575,7 @@ body {
 }
 
 .advantages-list .advantages-box {
-  padding-top: 164px;
+  padding-top: 184px;
 
   justify-content: space-between;
   background-repeat: no-repeat;
@@ -598,7 +614,7 @@ body {
 }
 
 .advantages-title {
-  margin: 20px 0;
+  margin: 0;
 
   font-weight: 700;
   font-size: 24px;
