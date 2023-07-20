@@ -562,7 +562,7 @@ body {
   grid-column: span 2;
 }
 
-.advantages-h3 {
+.advantages-title {
   margin: 20px 0;
 
   font-weight: 700;
@@ -571,7 +571,7 @@ body {
   text-transform: uppercase;
 }
 
-.advantages-p {
+.advantages-text {
   margin: 0;
 
   font-size: 18px;
@@ -591,7 +591,7 @@ body {
   list-style-type: none;
 }
 
-div.advantages-box .advantages-h3::after {
+div.advantages-box .advantages-title::after {
   display: block;
   width: 60px;
   margin: 29px auto 30px;
@@ -601,7 +601,7 @@ div.advantages-box .advantages-h3::after {
   content: "";
 }
 
-.bg-transparency-00 h3.advantages-h3::after {
+.bg-transparency-00 h3.advantages-title::after {
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -1132,6 +1132,35 @@ div.advantages-box .advantages-h3::after {
   color: rgba(0, 0, 0, 0.302);
 }
 
+.hotel-stars {
+  height: 18px;
+  margin-top: 10px;
+  margin-left: -1px;
+
+  background-image: url(../images/star.svg);
+  background-repeat: space;
+}
+
+.hotel-stars-1 {
+  width: 23px;
+}
+
+.hotel-stars-2 {
+  width: 45px;
+}
+
+.hotel-stars-3 {
+  width: 70px;
+}
+
+.hotel-stars-4 {
+  width: 95px;
+}
+
+.hotel-stars-5 {
+  width: 121px;
+}
+
 .housing-list-header {
   min-height: 49px;
   display: flex;
@@ -1355,8 +1384,7 @@ div.advantages-box .advantages-h3::after {
   color: #FF5757;
 }
 
-.modal-first-day,
-.modal-last-day,
+.modal-day,
 .modal-guests {
   display: flex;
   justify-content: space-between;

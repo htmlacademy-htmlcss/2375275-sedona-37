@@ -14,7 +14,7 @@
     <div class="container">
       <header class="site-header" data-test="header">
         <nav class="navigation">
-          <a class="navigation-logo" href="#">
+          <a class="navigation-logo" href="index.html">
             <img class="page-header-logo" alt="Логотип города Седона." width="141" height="70" src="images/logo.svg">
           </a>
           <ul class="navigation-list">
@@ -58,7 +58,7 @@
                 </a>
               </li>
               <li class="breadcrumb-item">
-                <a class="breadcrumb-link">Гостиницы</a>
+                <a class="breadcrumb-link" href="#">Гостиницы</a>
               </li>
             </ul>
           </header>
@@ -189,7 +189,9 @@
               <p class="housing-card-price">От 4000 ₽</p>
               <a class="housing-card-btn-more" href="#">Подробнее</a>
               <button class="housing-card-btn-fav">В избранное</button>
-              <img src="images/stars-4.svg" width="140" height="37" alt="Гостиница с четырмя звездами.">
+              <div class="hotel-stars hotel-stars-4">
+                <span class="visually-hidden">4 звезды</span>
+              </div>
               <p class="housing-card-rating">Рейтинг: 8,5</p>
             </li>
 
@@ -203,7 +205,9 @@
               <p class="housing-card-price">От 5000 ₽</p>
               <a class="housing-card-btn-more" href="#">Подробнее</a>
               <button class="housing-card-btn-fav housing-card-btn-infav">В избранном</button>
-              <img src="images/stars-4.svg" width="140" height="37" alt="Гостиница с четырмя звездами.">
+              <div class="hotel-stars hotel-stars-4">
+                <span class="visually-hidden">4 звезды</span>
+              </div>
               <p class="housing-card-rating">Рейтинг: 9,2</p>
             </li>
 
@@ -217,7 +221,9 @@
               <p class="housing-card-price">От 2500 ₽</p>
               <a class="housing-card-btn-more" href="#">Подробнее</a>
               <button class="housing-card-btn-fav">В избранное</button>
-              <img src="images/stars-3.svg" width="140" height="37" alt="Гостиница с тремя звездами.">
+              <div class="hotel-stars hotel-stars-3">
+                <span class="visually-hidden">3 звезды</span>
+              </div>
               <p class="housing-card-rating">Рейтинг: 6,9</p>
             </li>
 
@@ -231,14 +237,16 @@
               <p class="housing-card-price">От 1500 ₽</p>
               <a class="housing-card-btn-more" href="#">Подробнее</a>
               <button class="housing-card-btn-fav">В избранное</button>
-              <img src="images/stars-2.svg" width="140" height="37" alt="Гостиница с двумя звездами.">
+              <div class="hotel-stars hotel-stars-2">
+                <span class="visually-hidden">2 звезды</span>
+              </div>
               <p class="housing-card-rating">Рейтинг: 5,0</p>
             </li>
           </ul>
 
           <ul class="pagination">
             <li class="pagination-item pagination-current-item">
-              <a class="pagination-link pagination-current">1</a>
+              <a class="pagination-link pagination-current" href="#">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -306,12 +314,12 @@
         </svg>
       </button>
       <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="modal-first-day">
+        <label class="modal-day">
           <span class="modal-text">Дата Заезда:</span>
           <input class="field-day" type="text" name="first-day" value="27 апреля 2020" required>
         </label>
         <span class="modal-warn"> Мы не можем отправить вас в прошлое. </span>
-        <label class="modal-last-day">
+        <label class="modal-day">
           <span class="modal-text">Дата Выезда:</span>
           <input class="field-day" type="text" name="last-day" value="1 сентября 2023" required>
         </label>
