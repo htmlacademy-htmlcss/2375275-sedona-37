@@ -40,6 +40,7 @@
             </li>
             <li class="navigation-item">
               <a class="btn-nav-fav" aria-label="Список гостиниц в избранном."></a>
+              <span class="fav-count">12</span>
             </li>
             <li class="navigation-item">
               <button class="btn-nav" type="button">ХОЧУ СЮДА!</button>
@@ -53,38 +54,37 @@
           <h1 class="visually-hidden">Город Седона в Аризоне</h1>
           <img class="logo" src="images/welcome.svg" width="458" height="352" role="img"
             alt="Добро пожаловать в великолепную Седону.">
-          <img class="divider" src="images/divider.svg" width="1200" height="57" alt="Разделитель" aria-hidden="true">
         </section>
         <section class="advantages" data-test="advantages">
           <h2 class="title-text">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
           <p class="other-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 
           <div class="advantages-box bg-transparency-00">
-            <h3 class="advantages-h3 light-text">Настоящий<br>городок</h3>
-            <p class="advantages-p light-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <h3 class="advantages-title light-text">Настоящий<br>городок</h3>
+            <p class="advantages-text light-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <div class="advantages-img">
             <img src="images/pictures/photo-city.jpg" width="800" height="385" alt="Фоторгафия великолепной Седоны.">
           </div>
           <div class="advantages-box bg-transparency-12">
-            <h3 class="advantages-h3">Небольшая площадь</h3>
-            <p class="advantages-p">Все достопримечательности находятся очень близко</p>
+            <h3 class="advantages-title">Небольшая площадь</h3>
+            <p class="advantages-text">Все достопримечательности находятся очень близко</p>
           </div>
           <div class="advantages-box bg-transparency-20">
-            <h3 class="advantages-h3">Красивая<br>дорога</h3>
-            <p class="advantages-p">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <h3 class="advantages-title">Красивая<br>дорога</h3>
+            <p class="advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="advantages-box bg-transparency-12">
-            <h3 class="advantages-h3">Мало<br>туристов</h3>
-            <p class="advantages-p">Большинство едет в Гранд Каньон и толпится там</p>
+            <h3 class="advantages-title">Мало<br>туристов</h3>
+            <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
           <div class="advantages-img">
             <img src="images/pictures/photo-canyon.jpg" width="800" height="385"
               alt="Фоторгафия каньона вблизи Седоны.">
           </div>
           <div class="advantages-box bg-transparency-00">
-            <h3 class="advantages-h3 light-text">Там есть<br>мост дьявола</h3>
-            <p class="advantages-p light-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <h3 class="advantages-title light-text">Там есть<br>мост дьявола</h3>
+            <p class="advantages-text light-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>
 
           <h2 class="title-text">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</h2>
@@ -92,19 +92,16 @@
 
           <ul class="advantages-list">
             <li class="advantages-box bg-transparency-12">
-              <img src="images/home.svg" width="75" height="72" alt="Иллюстрация домик." aria-hidden="true">
-              <h3 class="advantages-h3">Жильё</h3>
-              <p class="advantages-p">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+              <h3 class="advantages-title">Жильё</h3>
+              <p class="advantages-text">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
             </li>
             <li class="advantages-box">
-              <img src="images/food.svg" width="75" height="71" alt="Иллюстрация пирожок." aria-hidden="true">
-              <h3 class="advantages-h3">Еда</h3>
-              <p class="advantages-p">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
+              <h3 class="advantages-title">Еда</h3>
+              <p class="advantages-text">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
             </li>
             <li class="advantages-box bg-transparency-12">
-              <img src="images/gift.svg" width="65" height="75" alt="Иллюстрация подарок." aria-hidden="true">
-              <h3 class="advantages-h3">Сувениры</h3>
-              <p class="advantages-p">Не только китайского,<br>но и настоящего местного<br>производства!</p>
+              <h3 class="advantages-title">Сувениры</h3>
+              <p class="advantages-text">Не только китайского,<br>но и настоящего местного<br>производства!</p>
             </li>
           </ul>
 
@@ -164,12 +161,12 @@
         </svg>
       </button>
       <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="modal-first-day">
+        <label class="modal-day">
           <span class="modal-text">Дата Заезда:</span>
           <input class="field-day" type="text" name="first-day" value="27 апреля 2020" required>
         </label>
         <span class="modal-warn"> Мы не можем отправить вас в прошлое. </span>
-        <label class="modal-last-day">
+        <label class="modal-day">
           <span class="modal-text">Дата Выезда:</span>
           <input class="field-day" type="text" name="last-day" value="1 сентября 2023" required>
         </label>
